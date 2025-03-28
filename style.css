@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter_18pt-Regular.ttf) format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter_18pt-MediumItalic.ttf) format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter_18pt-SemiBold.ttf) format(truetype);
+  font-weight: 600;
+}
+* {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1360px;
+  background-color: #e1d4c9;
+  margin: auto;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+header .nav {
+  display: flex;
+  gap: 40px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+}
+header .menu p {
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #403f3d;
+}
+header .menu img {
+  padding-bottom: 4px;
+}
+
+/* main */
+
+.hero {
+  background-image: url(./images/img-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1360px;
+  height: 670px;
+  border-radius: 40px;
+}
+.hero .enjoy {
+  width: 530px;
+  padding: 100px 730px 100px 100px;
+}
+.hero .enjoy h1 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 105%;
+  color: #e1d4c9;
+}
+.hero .enjoy span {
+  font-style: italic;
+  color: #b0907a;
+}
+.hero .enjoy p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #e1d4c9;
+}
+.hero .enjoy button {
+  width: 200px;
+  height: 64px;
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #e1d4c9;
+  color: #403f3d;
+}

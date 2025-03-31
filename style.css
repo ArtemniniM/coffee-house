@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Inter Light";
   src: url(./fonts/Inter_18pt-Light.ttf) format(truetype);
-  font-weight: 600;
+  font-weight: 400;
 }
 * {
   font-family: "Inter SemiBold";
@@ -101,7 +101,7 @@ header .menu img {
 .hero .enjoy p {
   margin-bottom: 40px;
   font-family: "Inter Light";
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
@@ -239,4 +239,224 @@ header .menu img {
   width: 660px;
   height: 590px;
   border-radius: 20px;
+}
+
+/* download */
+.download {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.download .left {
+  width: 630px;
+}
+.download .right {
+}
+.download .left h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #403f3d;
+}
+.download .left span {
+  font-family: "Inter MediumItalic";
+  font-weight: 600;
+  font-size: 60px;
+  color: #b0907a;
+}
+.download .left p {
+  margin-bottom: 40px;
+  font-family: "Inter Light";
+  font-weight: 400;
+  font-size: 16px;
+  color: #403f3d;
+}
+.download .left .buttons {
+  display: flex;
+  gap: 20px;
+}
+/* left */
+.download .left .buttons .apple {
+  width: 200px;
+  height: 64px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  gap: 8px;
+  border-radius: 100px;
+  border-width: 1px;
+  background-color: #e1d4c9;
+  position: relative;
+}
+.download .left .buttons .apple .img {
+  background-image: url(./images/Icon-a.png);
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.download .left .buttons .apple .up {
+  position: absolute;
+  top: 12px;
+  left: 64px;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: "Inter SemiBold";
+  text-align: center;
+  color: #403f3d;
+}
+.download .left .buttons .apple .down {
+  position: absolute;
+  top: 28px;
+  left: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter SemiBold";
+  color: #403f3d;
+}
+
+/* right */
+.download .left .buttons .google {
+  width: 200px;
+  height: 64px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  gap: 8px;
+  border-radius: 100px;
+  border-width: 1px;
+  background-color: #e1d4c9;
+  position: relative;
+}
+.download .left .buttons .google .img {
+  background-image: url(./images/Icon-g.png);
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.download .left .buttons .google .up {
+  position: absolute;
+  top: 12px;
+  left: 64px;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: "Inter SemiBold";
+  text-align: center;
+  color: #403f3d;
+}
+.download .left .buttons .google .down {
+  position: absolute;
+  top: 28px;
+  left: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter SemiBold";
+  color: #403f3d;
+}
+
+/* footer */
+
+footer {
+  background-color: #665f55;
+  border-radius: 40px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* left  */
+footer .left {
+  width: 530px;
+}
+footer .left h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 60px;
+  color: #e1d4c9;
+}
+footer .left span {
+  font-family: "Inter MediumItalic";
+  font-weight: 600;
+  font-size: 60px;
+  color: #b0907a;
+}
+footer .left .buttons .twit {
+  position: relative;
+  margin-right: 12px;
+  background-color: #665f55;
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
+footer .left .buttons .inst {
+  position: relative;
+  margin-right: 12px;
+  background-color: #665f55;
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
+footer .left .buttons .face {
+  position: relative;
+  background-color: #665f55;
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
+footer .left .buttons .twit .img1 {
+  background-image: url(./images/twitter.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+footer .left .buttons .inst .img2 {
+  background-image: url(./images/instagram.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+footer .left .buttons .face .img3 {
+  background-image: url(./images/facebook.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+/* right  */
+
+footer .right {
+  width: 530px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e1d4c9;
+}
+footer .right h3 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #e1d4c9;
+}
+footer .right .geo {
+  margin-bottom: 16px;
+}
+footer .right .numb {
+  margin-bottom: 16px;
+}
+footer .right img {
+  margin-right: 8px;
 }

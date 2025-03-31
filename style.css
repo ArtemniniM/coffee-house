@@ -1,20 +1,40 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Regular";
   src: url(./fonts/Inter_18pt-Regular.ttf) format(truetype);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter medium";
+  src: url(./fonts/Inter_18pt-Medium.ttf) format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter Thin";
+  src: url(./fonts/Inter_18pt-Thin.ttf) format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter MediumItalic";
   src: url(./fonts/Inter_18pt-MediumItalic.ttf) format(truetype);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter BoldItalic";
+  src: url(./fonts/Inter_18pt-BoldItalic.ttf) format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter SemiBold";
   src: url(./fonts/Inter_18pt-SemiBold.ttf) format(truetype);
   font-weight: 600;
 }
+@font-face {
+  font-family: "Inter Light";
+  src: url(./fonts/Inter_18pt-Light.ttf) format(truetype);
+  font-weight: 600;
+}
 * {
-  font-family: "Inter";
+  font-family: "Inter SemiBold";
   margin: 0;
   padding: 0;
 }
@@ -60,6 +80,7 @@ header .menu img {
   max-width: 1360px;
   height: 670px;
   border-radius: 40px;
+  margin-bottom: 100px;
 }
 .hero .enjoy {
   width: 530px;
@@ -67,17 +88,19 @@ header .menu img {
 }
 .hero .enjoy h1 {
   margin-bottom: 40px;
+  font-family: "Inter medium";
   font-weight: 600;
   font-size: 72px;
   line-height: 105%;
   color: #e1d4c9;
 }
 .hero .enjoy span {
-  font-style: italic;
+  font-family: "Inter MediumItalic";
   color: #b0907a;
 }
 .hero .enjoy p {
   margin-bottom: 40px;
+  font-family: "Inter Light";
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -93,4 +116,127 @@ header .menu img {
   font-size: 16px;
   background-color: #e1d4c9;
   color: #403f3d;
+}
+
+/* cup  */
+.cup {
+  margin-bottom: 100px;
+}
+.cup .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cup .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+}
+.cup h2 {
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cup span {
+  font-family: "Inter MediumItalic";
+  font-weight: 600;
+  font-size: 60px;
+  color: #b0907a;
+}
+.cup .container .middle h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #403f3d;
+  margin-bottom: 16px;
+}
+.cup .container .middle p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter Light";
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cup .container .middle .price {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Inter SemiBold";
+  color: #403f3d;
+  margin-bottom: 40px;
+}
+.cup .container .middle .down {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.cup .container .middle .one {
+  height: 4px;
+  width: 40px;
+  background-color: #c1b6ad;
+}
+.cup .container .middle .two {
+  height: 4px;
+  width: 40px;
+  background-color: #c1b6ad;
+}
+.cup .container .middle .three {
+  height: 4px;
+  width: 40px;
+  background-color: #c1b6ad;
+}
+
+/* pics */
+.pics {
+  margin-bottom: 100px;
+}
+.pics h2 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #403f3d;
+  margin-bottom: 40px;
+}
+.pics h2 span {
+  font-weight: 600;
+  font-family: "Inter MediumItalic";
+  font-size: 60px;
+  color: #b0907a;
+}
+.pics .all-pic {
+  display: flex;
+  gap: 40px;
+}
+.pics .all-pic .left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pics .all-pic .right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pics .all-pic .left .image1 {
+  background-image: url(./images/about-1.jpg);
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+}
+.pics .all-pic .left .image2 {
+  background-image: url(./images/about-2.jpg);
+  width: 660px;
+  height: 430px;
+  border-radius: 20px;
+}
+.pics .all-pic .right .image3 {
+  background-image: url(./images/about-3.jpg);
+  width: 660px;
+  height: 430px;
+  border-radius: 20px;
+}
+.pics .all-pic .right .image4 {
+  background-image: url(./images/about-4.jpg);
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
 }

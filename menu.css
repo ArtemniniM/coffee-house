@@ -134,6 +134,8 @@ header .menu img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
+  height: 196px;
   padding: 20px;
 }
 .container .item h3 {
@@ -146,8 +148,8 @@ header .menu img {
   font-family: "Inter Light";
   font-weight: 400;
   font-size: 16px;
+  line-height: 150%;
   color: #403f3d;
-  /* margin-bottom: 12px; */
 }
 .container .item h4 {
   font-weight: 600;

@@ -83,7 +83,7 @@ header .wrapper .burger_menu {
   background-image: url(./images/img-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* object-position: right; */
+  background-position: center;
   width: 100%;
   border-radius: 40px;
   margin: 80px 0 100px 0;
@@ -531,9 +531,15 @@ footer .right .time:hover {
     flex-direction: column;
     align-items: center;
   }
+  .pics .all-pic .left {
+    width: 100%;
+  }
+  .pics .all-pic .right {
+    width: 100%;
+  }
   .pics .all-pic .left .image1 {
     max-width: 688px;
-    height: 45vh;
+    height: 40vh;
   }
   .pics .all-pic .left .image2 {
     display: none;
@@ -543,7 +549,7 @@ footer .right .time:hover {
   }
   .pics .all-pic .right .image4 {
     max-width: 688px;
-    height: 45vh;
+    height: 40vh;
   }
   .download {
     flex-direction: column;

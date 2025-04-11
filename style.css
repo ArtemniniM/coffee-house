@@ -32,33 +32,49 @@ body {
   max-width: 1360px;
   background-color: #e1d4c9;
   margin: auto;
+  padding: 0 40px;
 }
 
 /* header */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  background-color: #e1d4c9;
+  margin: auto;
+  max-width: 1360px;
 }
-header .nav {
+header .wrapper .nav {
   display: flex;
   gap: 40px;
 }
-header .menu {
+header .wrapper .menu {
   display: flex;
   align-items: center;
 }
-header .menu p {
+header .wrapper .menu:hover {
+  border-bottom: 2px solid #403f3d;
+  padding-top: 4px;
+}
+header .wrapper .menu p {
   margin-right: 8px;
   font-weight: 600;
   font-size: 16px;
   color: #403f3d;
 }
-header .menu img {
+header .wrapper .menu img {
   padding-bottom: 4px;
+}
+header .wrapper .burger_menu {
+  display: none;
 }
 
 /* main */
@@ -67,14 +83,14 @@ header .menu img {
   background-image: url(./images/img-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1360px;
-  height: 670px;
+  /* object-position: right; */
+  width: 100%;
   border-radius: 40px;
-  margin-bottom: 100px;
+  margin: 80px 0 100px 0;
 }
 .hero .enjoy {
-  width: 530px;
-  padding: 100px 730px 100px 100px;
+  max-width: 530px;
+  padding: 100px 0 100px 100px;
 }
 .hero .enjoy h1 {
   margin-bottom: 40px;
@@ -98,6 +114,7 @@ header .menu img {
   color: #e1d4c9;
 }
 .hero .enjoy button {
+  position: relative;
   width: 200px;
   height: 64px;
   border: none;
@@ -106,6 +123,18 @@ header .menu img {
   font-size: 16px;
   background-color: #e1d4c9;
   color: #403f3d;
+}
+.hero .enjoy button img {
+  opacity: 0;
+  transition: opacity 0, 3s ease;
+  position: absolute;
+  top: 20px;
+  left: 128px;
+}
+.hero .enjoy button:hover {
+  img {
+    opacity: 1;
+  }
 }
 
 /* cup  */
@@ -134,6 +163,12 @@ header .menu img {
   font-weight: 600;
   font-size: 60px;
   color: #b0907a;
+}
+.cup .container {
+  width: 100%;
+}
+.cup .container .middle img {
+  width: 100%;
 }
 .cup .container .middle h3 {
   font-weight: 600;
@@ -200,33 +235,31 @@ header .menu img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 50%;
 }
 .pics .all-pic .right {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 50%;
 }
 .pics .all-pic .left .image1 {
-  background-image: url(./images/about-1.jpg);
-  width: 660px;
+  width: 100%;
   height: 590px;
   border-radius: 20px;
 }
 .pics .all-pic .left .image2 {
-  background-image: url(./images/about-2.jpg);
-  width: 660px;
+  width: 100%;
   height: 430px;
   border-radius: 20px;
 }
 .pics .all-pic .right .image3 {
-  background-image: url(./images/about-3.jpg);
-  width: 660px;
+  width: 100%;
   height: 430px;
   border-radius: 20px;
 }
 .pics .all-pic .right .image4 {
-  background-image: url(./images/about-4.jpg);
-  width: 660px;
+  width: 100%;
   height: 590px;
   border-radius: 20px;
 }
@@ -239,9 +272,13 @@ header .menu img {
   margin-bottom: 100px;
 }
 .download .left {
-  width: 630px;
+  max-width: 630px;
 }
 .download .right {
+  max-width: 630px;
+}
+.download .right img {
+  width: 100%;
 }
 .download .left h2 {
   margin-bottom: 40px;
@@ -282,6 +319,18 @@ header .menu img {
   background-color: #e1d4c9;
   position: relative;
 }
+.download .left .buttons .apple:hover {
+  background-color: #665f55;
+  & .up {
+    color: #e1d4c9;
+  }
+  & .down {
+    color: #e1d4c9;
+  }
+  & .img {
+    background-image: url(./images/hover\ apple.png);
+  }
+}
 .download .left .buttons .apple .img {
   background-image: url(./images/Icon-a.png);
   background-repeat: no-repeat;
@@ -313,15 +362,24 @@ header .menu img {
 .download .left .buttons .google {
   width: 200px;
   height: 64px;
-  padding-top: 12px;
-  padding-right: 20px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 12px 20px;
   gap: 8px;
   border-radius: 100px;
   border-width: 1px;
   background-color: #e1d4c9;
   position: relative;
+}
+.download .left .buttons .google:hover {
+  background-color: #665f55;
+  & .up {
+    color: #e1d4c9;
+  }
+  & .down {
+    color: #e1d4c9;
+  }
+  & .img {
+    background-image: url(./images/hover\ google.png);
+  }
 }
 .download .left .buttons .google .img {
   background-image: url(./images/Icon-g.png);
@@ -362,7 +420,7 @@ footer {
 }
 /* left  */
 footer .left {
-  width: 530px;
+  max-width: 530px;
 }
 footer .left h2 {
   margin-bottom: 40px;
@@ -430,7 +488,7 @@ footer .left .buttons .face .img3 {
 /* right  */
 
 footer .right {
-  width: 530px;
+  max-width: 530px;
   font-weight: 600;
   font-size: 16px;
   color: #e1d4c9;
@@ -449,4 +507,123 @@ footer .right .numb {
 }
 footer .right img {
   margin-right: 8px;
+}
+footer .right .geo:hover {
+  border-bottom: 2px solid #e1d4c9;
+  margin-top: 4px;
+  width: 182px;
+}
+footer .right .numb:hover {
+  border-bottom: 2px solid #e1d4c9;
+  margin-top: 4px;
+  width: 175px;
+}
+footer .right .time:hover {
+  border-bottom: 2px solid #e1d4c9;
+  margin-top: 4px;
+  width: 265px;
+}
+@media (max-width: 1000px) {
+  .pics {
+    text-align: center;
+  }
+  .pics .all-pic {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pics .all-pic .left .image1 {
+    max-width: 688px;
+    height: 45vh;
+  }
+  .pics .all-pic .left .image2 {
+    display: none;
+  }
+  .pics .all-pic .right .image3 {
+    display: none;
+  }
+  .pics .all-pic .right .image4 {
+    max-width: 688px;
+    height: 45vh;
+  }
+  .download {
+    flex-direction: column;
+  }
+  .download .left h2,
+  p {
+    text-align: center;
+  }
+  .download .left .buttons {
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+  }
+}
+@media (max-width: 770px) {
+  header .wrapper .nav {
+    display: none;
+  }
+  header .wrapper .menu {
+    display: none;
+  }
+  header .wrapper .burger_menu {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0 16px;
+  }
+  .hero .enjoy {
+    padding: 60px 16px;
+  }
+  .hero .enjoy h1 {
+    font-size: 42px;
+  }
+  .hero .enjoy p {
+    font-size: 16px;
+    text-align: start;
+  }
+  .cup h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .cup h2 span {
+    font-size: 32px;
+    line-height: 125%;
+  }
+  .cup .container .left-arrow {
+    display: none;
+  }
+  .cup .container .right-arrow {
+    display: none;
+  }
+  .pics h2 {
+    font-size: 32px;
+  }
+  .pics h2 span {
+    font-size: 32px;
+  }
+  .download .left h2 {
+    text-align: start;
+    font-size: 32px;
+  }
+  .download .left h2 span {
+    font-size: 32px;
+  }
+  .download .left p {
+    text-align: start;
+    font-size: 16px;
+  }
+  .download .left .buttons {
+    flex-direction: column;
+  }
+  footer .left h2 {
+    font-size: 32px;
+  }
+  footer .left h2 span {
+    font-size: 32px;
+  }
 }

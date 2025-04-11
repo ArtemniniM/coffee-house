@@ -63,6 +63,12 @@ header .menu img {
   width: 20px;
   height: 20px;
 }
+header .menu:hover {
+  text-decoration: underline;
+  & img {
+    text-decoration: underline;
+  }
+}
 
 /* first  */
 .first {
@@ -100,6 +106,13 @@ header .menu img {
   border-radius: 100px;
   border: 1px solid #c1b6ad;
   background-color: #e1d4c9;
+}
+.first .buttons .coffee:hover {
+  color: #e1d4c9;
+  background-color: #665f55;
+  & .left {
+    background-color: #e1d4c9;
+  }
 }
 .first .buttons .coffee .left {
   display: flex;
